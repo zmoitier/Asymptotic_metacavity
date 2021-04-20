@@ -18,7 +18,8 @@ This is the code associated with the article:
   - [Matplotlib](https://github.com/matplotlib/matplotlib),
   - [Numba](https://github.com/numba/numba),
   - [NumPy](https://github.com/numpy/numpy),
-  - [SciPy](https://github.com/scipy/scipy).
+  - [SciPy](https://github.com/scipy/scipy),
+  - [cxroots](https://rparini.github.io/cxroots/).
 
 ## Install
 
@@ -30,4 +31,31 @@ Clone from GitHub repository:
 
 ## Instructions for usage
 
-Run the Jupyter notebook `run_fig_i.nbpy` to get the corresponding figure in the paper.
+### Compute resonances
+The folder `Compute resonances` contains codes necessary to compute resonances using contour integration techniques.
+For convenience some cases have been pre-computed and stored in the `data` folder.
+
+Run
+```bash
+     python3 calc_cxroots eps
+```
+to compute the 64 resonances for the circular cavity with permittivity $\varepsilon_{cav}$ = eps. 
+
+### data
+
+The folder `data` contains computed resonances and modes for the circular metamaterial cavity.
+The data can be obtained by excuting the codes in the folder `Compute resonances`.
+
+### Resonances
+
+Run the Jupyter notebook `Interactive resonant modes for circular negative metamaterial cavity
+.ipynb` to get the resonances sets and associated resonant modes for the circular cavity. This interactive notebook allows you to recover Figures 3, 8, 9 from the paper.
+
+### Scattering
+
+Run the Jupyter notebook `Interactive scattering for circular negative metamaterial cavity
+.ipynb` to get the scattering solution and stability constant for the circular cavity. This interactive notebook allows you to recover Figures 1, 2 from the paper.
+
+### Asymptotics
+
+Run the Jupyter notebook `Quasi resonances.ipynb` to compute the quasi-resonances for a given metamaterial cavity. This notebook allows you to recover quasi-resonances used in Figure 7 from the paper.
