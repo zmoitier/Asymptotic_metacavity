@@ -39,7 +39,7 @@ Run
 ```bash
      python3 calc_cxroots eps
 ```
-to compute the 64 resonances for the circular cavity with permittivity $\varepsilon_{cav}$ = eps. 
+to compute the 64 resonances for the circular cavity with permittivity eps. 
 
 ### data
 
