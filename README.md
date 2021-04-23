@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/357641950.svg)](https://zenodo.org/badge/latestdoi/357641950)
+
 # Asymptotic_metacavity
 
 ## Reference
@@ -32,29 +34,28 @@ Clone from GitHub repository:
 ## Instructions for usage
 
 ### Compute resonances
-The folder `Compute resonances` contains codes necessary to compute resonances using contour integration techniques.
-For convenience some cases have been pre-computed and stored in the `data` folder.
+
+The folder `Compute resonances` contains codes necessary to compute resonances using contour integration techniques. For convenience some cases have been pre-computed and stored in the `data` folder.
 
 Run
+
 ```bash
      python3 calc_cxroots eps
 ```
-to compute the 64 resonances for the circular cavity with permittivity eps. 
+
+to compute the 64 resonances for the circular cavity with permittivity eps.
 
 ### data
 
-The folder `data` contains computed resonances and modes for the circular metamaterial cavity.
-The data can be obtained by excuting the codes in the folder `Compute resonances`.
+The folder `data` contains computed resonances and modes for the circular metamaterial cavity. The data can be obtained by excuting the codes in the folder `Compute resonances`.
 
 ### Resonances
 
-Run the Jupyter notebook `Interactive resonant modes for circular negative metamaterial cavity
-.ipynb` to get the resonances sets and associated resonant modes for the circular cavity. This interactive notebook allows you to recover Figures 3, 8, 9 from the paper.
+Run the Jupyter notebook `Interactive resonant modes for circular negative metamaterial cavity .ipynb` to get the resonances sets and associated resonant modes for the circular cavity. This interactive notebook allows you to recover Figures 3, 8, 9 from the paper.
 
 ### Scattering
 
-Run the Jupyter notebook `Interactive scattering for circular negative metamaterial cavity
-.ipynb` to get the scattering solution and stability constant for the circular cavity. This interactive notebook allows you to recover Figures 1, 2 from the paper.
+Run the Jupyter notebook `Interactive scattering for circular negative metamaterial cavity .ipynb` to get the scattering solution and stability constant for the circular cavity. This interactive notebook allows you to recover Figures 1, 2 from the paper.
 
 ### Asymptotics
 

@@ -15,7 +15,7 @@ from cxroots import AnnulusSector, Circle
 from scipy.special import h1vp, hankel1, iv, ivp
 
 ## Entries ##
-ε = float(argv[1]) #For example -1.1 + 1e-2 * 1j 
+ε = float(argv[1])  # For example -1.1 + 1e-2 * 1j
 η = np.sqrt(-ε)
 print(f"η = {η}")
 c = η + 1 / η
@@ -86,7 +86,9 @@ def calcInt():
     else:
         Int.close()
 
+
 calcInt()
+
 
 def calcResPla():
     if ε < -1.0:
@@ -103,6 +105,7 @@ def calcResPla():
             angle = np.angle(z[0])
 
         Pla.close()
+
 
 calcResPla()
 
@@ -163,6 +166,7 @@ def rewriteSave():
 
     np.savez(f"eps_{ε}.npz", inner=Int, plasmon=Pla, outer=out2[rep])
 
+
 rewriteSave()
 
 
@@ -171,4 +175,4 @@ def rewriteSave_pla():
     np.savez(f"eps_{ε}.npz", plasmon=Pla)
 
 
-#rewriteSave_pla()
+# rewriteSave_pla()
