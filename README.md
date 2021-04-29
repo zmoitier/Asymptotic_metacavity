@@ -17,11 +17,19 @@ This is the code associated with the article:
 
 - Require the following libraries:
 
-  - [Matplotlib](https://github.com/matplotlib/matplotlib),
-  - [Numba](https://github.com/numba/numba),
-  - [NumPy](https://github.com/numpy/numpy),
-  - [SciPy](https://github.com/scipy/scipy),
-  - [cxroots](https://rparini.github.io/cxroots/).
+  - For numerical computations: [cxroots](https://github.com/rparini/cxroots), [Numba](https://github.com/numba/numba), [NumPy](https://github.com/numpy/numpy), and [SciPy](https://github.com/scipy/scipy);
+
+  - For symbolic computations: [SymPy](https://github.com/sympy/sympy);
+
+  - For visualization: [Matplotlib](https://github.com/matplotlib/matplotlib);
+
+  - For Jupyter notebook: [IPython](https://github.com/ipython/ipython), [ipywidgets](https://github.com/jupyter-widgets/ipywidgets), and [JupyterLab](https://github.com/jupyterlab/jupyterlab).
+
+Might works with previous versions of the libraries but if it does not works try to update the libraries for example through pip
+
+```bash
+python3 -m pip install --user --upgrade -r requirements.txt
+```
 
 ## Install
 
@@ -57,6 +65,10 @@ Run the Jupyter notebook `Interactive resonant modes for circular negative metam
 
 Run the Jupyter notebook `Interactive scattering for circular negative metamaterial cavity .ipynb` to get the scattering solution and stability constant for the circular cavity. This interactive notebook allows you to recover Figures 1, 2 from the paper.
 
-### Asymptotics
+### Asymptotic
 
 Run the Jupyter notebook `Quasi resonances.ipynb` to compute the quasi-resonances for a given metamaterial cavity. This notebook allows you to recover quasi-resonances used in Figure 7 from the paper.
+
+## Contact
+
+If you have any questions or suggestions please feel free to create [an issue in this repository](https://github.com/zmoitier/Asymptotic_metacavity/issues/new).
