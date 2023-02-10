@@ -1,8 +1,10 @@
 """ Utils for ploting
 
     Author: Zoïs Moitier
-            Karlsruhe Institute of Technology, Germany
+            ENSTA Paris, France
 """
+
+
 import numpy as np
 
 

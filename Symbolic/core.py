@@ -18,7 +18,7 @@ def inv_ε_expan(η_iter, z, h, N):
     ηiη0 = 0
     for q, η in enumerate(η_iter):
         ηiη0 += η * (z * h) ** q / (η_iter[0] * sy.factorial(q))
-    εiε0 = sy.series(ηiη0 ** 2, x=h, n=N)
+    εiε0 = sy.series(ηiη0**2, x=h, n=N)
     ε0iε = sy.series(1 / εiε0, x=h, n=N)
     return (-ε0iε / η_iter[0] ** 2).expand().removeO()
 
@@ -26,24 +26,24 @@ def inv_ε_expan(η_iter, z, h, N):
 def formal_expan(fn, h, N):
     expan = fn[0]
     for n in range(1, N):
-        expan += fn[n] * h ** n
+        expan += fn[n] * h**n
     return expan
 
 
 def op_disk(iε, dz, z, h, N):
     f = sy.symbols("f", cls=sy.Function)
     r, ir = metric_expan(z, h, N)
-    tmp = (iε * r * dz(f(z)) + sy.O(h ** N)).expand()
-    L = (-ir * dz(tmp) + iε * ir * ir * f(z) + sy.O(h ** N)).expand()
+    tmp = (iε * r * dz(f(z)) + sy.O(h**N)).expand()
+    L = (-ir * dz(tmp) + iε * ir * ir * f(z) + sy.O(h**N)).expand()
     return (f, L.removeO())
 
 
 def op_omega(iε, κ, ds, dz, s, z, h, N):
     f, t = sy.symbols("f t", cls=sy.Function)
     g, ig = metric_expan(κ(s) * z, h, N)
-    tmp_s = (iε * ig * ds(f(s, z), t(s)) + sy.O(h ** N)).expand()
-    tmp_z = (iε * g * dz(f(s, z)) + sy.O(h ** N)).expand()
-    L = (-ig * (ds(tmp_s, t(s)) + dz(tmp_z)) + sy.O(h ** N)).expand()
+    tmp_s = (iε * ig * ds(f(s, z), t(s)) + sy.O(h**N)).expand()
+    tmp_z = (iε * g * dz(f(s, z)) + sy.O(h**N)).expand()
+    L = (-ig * (ds(tmp_s, t(s)) + dz(tmp_z)) + sy.O(h**N)).expand()
     return (f, t, L.removeO())
 
 

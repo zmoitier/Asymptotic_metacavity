@@ -6,7 +6,7 @@ from scipy import special as sp
 
 @numba.vectorize([numba.float64(numba.complex128), numba.float32(numba.complex64)])
 def abs2(x):
-    return x.real ** 2 + x.imag ** 2
+    return x.real**2 + x.imag**2
 
 
 def ε_to_η(ε):

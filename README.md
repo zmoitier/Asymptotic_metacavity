@@ -6,14 +6,14 @@
 
 This is the code associated with the article:
 
-- C. Carvalho and Z. Moitier, _Asymptotics for metamaterial cavities and their effect on scattering_ [[arXiv](https://arxiv.org/abs/2010.07583), [HAL](https://hal.archives-ouvertes.fr/hal-02965993)]
+- C. Carvalho and Z. Moitier, _Scattering resonances in unbounded transmission problems with sign-changing coefficient_, IMA Journal of Applied Mathematics. [[arXiv](https://arxiv.org/abs/2010.07583), [HAL](https://hal.science/hal-02965993), [DOI](https://doi.org/10.1093/imamat/hxad005)]
 
 ## Requirements
 
 - Python version:
 
-  - Tested on Python 3.8;
-  - Should works on Python 3.7 but not tested.
+  - Tested on Python 3.10;
+  - Should work on Python 3.7 but not tested.
 
 - Require the following libraries:
 
@@ -53,9 +53,9 @@ Run
 
 to compute the 64 resonances for the circular cavity with permittivity eps.
 
-### data
+### Data
 
-The folder `data` contains computed resonances and modes for the circular metamaterial cavity. The data can be obtained by excuting the codes in the folder `Compute resonances`.
+The folder `data` contains computed resonances and modes for the circular metamaterial cavity. The data can be obtained by executing the codes in the folder `Compute resonances`.
 
 ### Resonances
 
